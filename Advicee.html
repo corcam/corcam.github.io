@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="LiveCouncil">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <title>LiveCouncil</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet" type="text/css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media
+        queries -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#topWrap">
+
+                    <span class="fa-stack fa-lg">
+
+                        <i class="fa fa-circle fa-stack-2x"></i>
+
+                        <i class="fa fa-comments fa-stack-1x fa-inverse"></i>
+
+                    </span>
+
+                    Live
+                    <span class="title">Council</span>
+
+                </a>
+            </div>
+            <div class="collapse navbar-collapse appiNav">
+                <ul class="nav navbar-nav">
+                    <!-- <li><a href="#featureWrap">Features</a></li>
+
+							<li><a href="#productWrap">The Council</a></li>
+
+							<li><a href="#pricingWrap">Pricing</a></li>
+
+							<li><a href="#testimonialsWrap">Testimonials</a></li>
+
+							<li><a href="#contactWrap">Contact Us</a></li>
+
+-->
+                    <li>
+                        <a href="//my.lc.com:8080/" target="_blank1">Signout</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+    <!-- <div id="topWrap" class="jumbotron">
+
+	
+
+-->
+    <div id="pricingWrap"></div>
+
+    <div class="section">
+        <div class="container">
+            <div class="alert alert-info custBread" role="alert"><div class="span4 center-block">Advicee Council Details</div></div>
+
+            
+            <div class="row">
+                <!--        <div class="col-xs-12 col-sm-7 col-md-6 col-lg-5">-->
+
+                <form class="form-vertical" role="form">
+
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Provide your topic information</h3>
+                            </div>
+                            <div class="panel-body">
+                                <!--                        <fieldset>-->
+                                <div class="form-group">
+                                    <label for="input-text" class="text-info">Your Council Title</label>
+                                    <input type="text" class="form-control" id="input-text" placeholder="Info. gathering for SAP impl. team selection">
+                                </div>
+                                <div class="form-group">
+                                    <label for="input-select" class="text-info">Select your topic</label>
+                                    <select class="form-control" id="input-select">
+                                        <option value="">--Topics--</option>
+                                        <option value="1">SAP Portal Implementation</option>
+                                        <option value="2">SAP HANA migration</option>
+                                        <option value="3">Supply Chain</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="details" class="text-info">Provide specifics on selected topic</label>
+                                    <textarea class="form-control" rows="3" id="details" placeholder="I need to.."></textarea>
+
+                                </div>
+
+
+
+                                <!--                        </fieldset>-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Preferred times when you can talk</h3>
+                            </div>
+                            <div class="panel-body">
+
+                                <div class="form-group">
+                                    <!--                                    <label for="datetimepicker1" class="text-info"></label>-->
+                                    <div class='input-group date' id='datetimepicker1'>
+                                        <div class="input-group-addon dateTimeCounter"></div>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <!--                                    <label for="datetimepicker2" class="text-info"></label>-->
+                                    <div class='input-group date' id='datetimepicker2'>
+                                        <div class="input-group-addon dateTimeCounter"></div>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <!--                                    <label for="datetimepicker3" class="text-info"></label>-->
+                                    <div class='input-group date' id='datetimepicker3'>
+                                        <div class="input-group-addon dateTimeCounter"></div>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <form class="form-horizontal">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-4">Council Duration</label>
+                                            <div class="col-md-8">
+                                                <select class="form-control" id="input-select">
+                                                    <option value="1">30 minutes = $60 USD</option>
+                                                    <option value="2">45 minutes = $90 USD</option>
+                                                    <option value="3">60 minutes = $110 USD</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+<!--
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Choose my Advisor</button>
+                        </div>
+-->
+
+
+
+
+
+                    </div>
+
+
+                </form>
+                <!--        </div>-->
+            </div>
+            
+            
+            
+            <div class="row">
+<!--      <div class="span4"></div>-->
+        <div class="span4"><div class="form-group ">
+                    <button type="submit" class="center-block btn btn-primary btn-lg" id="submitAdvicee">Choose my Advisor</button>
+<!--            <a class="center-block btn btn-primary btn-lg" href="Advicee.html">Choose my Advisor</a>-->
+                        </div></div>
+<!--      <div class="span4"></div>-->
+    </div>
+            
+        </div>
+
+    </div>
+    <!-- /pricingWrap -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <p>Copyright © 2014 LiveCouncil. All Rights Reserved</p>
+                    <p class="social">
+                        <a href="https://www.facebook.com/liveCouncil">
+
+                            <span class="fa-stack fa-lg">
+
+                                <i class="fa fa-circle fa-stack-2x"></i>
+
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+
+                            </span>
+
+                        </a>
+                        <a href="https://twitter.com/liveCouncil">
+
+                            <span class="fa-stack fa-lg">
+
+                                <i class="fa fa-circle fa-stack-2x"></i>
+
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+
+                            </span>
+
+                        </a>
+                        <a href="https://plus.google.com/+liveCouncil">
+
+                            <span class="fa-stack fa-lg">
+
+                                <i class="fa fa-circle fa-stack-2x"></i>
+
+                                <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+
+                            </span>
+
+                        </a>
+                        <a href="http://www.youtube.com/user/liveCouncilOfficial">
+
+                            <span class="fa-stack fa-lg">
+
+                                <i class="fa fa-circle fa-stack-2x"></i>
+
+                                <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+
+                            </span>
+
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JavaScript==================================================-
+        ->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flexslider.js"></script>
+    <script src="js/custom.js"></script>
+    <!--        <script type="text/javascript" src="js/jquery.min.js"></script>-->
+    <script type="text/javascript" src="js/moment.min.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $('.mobileSlider').flexslider({
+                animation: "slide",
+                slideshowSpeed: 3000,
+                controlNav: false,
+                directionNav: true,
+                prevText: "&#171;",
+                nextText: "&#187;"
+            });
+            $('.flexslider').flexslider({
+                animation: "slide",
+                directionNav: false
+            });
+
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if ($(window).width() < 768) {
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top - $('.navbar-header').outerHeight(true) + 1
+                            }, 1000);
+                            return false;
+                        }
+                    } else {
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top - $('.navbar').outerHeight(true) + 1
+                            }, 1000);
+                            return false;
+                        }
+                    }
+
+                }
+            });
+
+            $('#toTop').click(function() {
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 1000);
+            });
+
+            var timer;
+            $(window).bind('scroll', function() {
+                clearTimeout(timer);
+                timer = setTimeout(refresh, 50);
+            });
+            var refresh = function() {
+                if ($(window).scrollTop() > 100) {
+                    $(".tagline").fadeTo("slow", 0);
+                } else {
+                    $(".tagline").fadeTo("slow", 1);
+                }
+            };
+
+$( "#submitAdvicee" ).on( "click", function() {
+  window.location="AdviceePayment.html";
+});
+
+        });
+    </script>
+    <script type="text/javascript">
+        $(function() {
+            $('#datetimepicker1').datetimepicker();
+            $('#datetimepicker2').datetimepicker();
+            $('#datetimepicker3').datetimepicker();
+        });
+    </script>
+</body>
+
+</html>
